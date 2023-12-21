@@ -4,17 +4,17 @@ pipeline{
         stages{	
 		stage('checkout'){
 		   steps{
-			git url: "https://github.com/akshu20791/DevOpsClassCodes/"
+			git url: "https://github.com/Maddyas88/DevOps_Jenkins/"
 	  }
 
 	}
-		stage('Madan-compile'){
+		stage('madan-compile'){
 			steps{
 			   sh "echo we are compling the code"
 			   sh "mvn compile"
 		}
 	}
-       }
+ }
 }
 
 
