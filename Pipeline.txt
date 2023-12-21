@@ -1,0 +1,20 @@
+pipeline{
+
+	agent any
+        stages{	
+		stage('checkout'){
+		   steps{
+			git url: "https://github.com/akshu20791/DevOpsClassCodes/"
+	  }
+
+	}
+		stage('akshat-compile'){
+			steps{
+			   sh "echo we are compling the code"
+			   sh "mvn compile"
+		}
+	}
+       }
+}
+
+
