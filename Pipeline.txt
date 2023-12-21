@@ -2,19 +2,18 @@ pipeline{
 
 	agent any
         stages{	
-		stage('checkout'){
-		   steps{
-			git url: "https://github.com/Maddyas88/DevOps_Jenkins/"
-	  }
+          stage('checkout'){
+	            steps{
+			          git url: "https://github.com/Maddyas88/DevOps_Jenkins/"
+	            }
 
-	}
-		stage('madan-compile'){
-			steps{
-			   sh "echo we are compling the code"
-			   sh "mvn compile"
-		}
-	}
- }
-}
-
+        	}
+        	stage('madan-compile'){
+		          steps{
+			         sh "echo we are compiling the code"
+			         sh "mvn compile" 
+	          	}
+        	}    
+        }
+}  
 
