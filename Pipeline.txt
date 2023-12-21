@@ -8,7 +8,7 @@ pipeline{
 	  }
 
 	}
-		stage('akshat-compile'){
+		stage('Madan-compile'){
 			steps{
 			   sh "echo we are compling the code"
 			   sh "mvn compile"
